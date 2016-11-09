@@ -5,5 +5,5 @@ Description=Renew Let's Encrypt Certificates
 Type=oneshot
 UMask=0277
 
-ExecStart=/usr/bin/certbot renew --agree-tos --post-hook '/bin/bash -c "while read s; do systemctl try-reload-or-restart \$s; done </etc/certbot-users"'
+ExecStart=/usr/bin/certbot renew --agree-tos --post-hook '/bin/bash -c "while read s; do systemctl try-reload-or-restart \\$$s; done </etc/certbot-users"'
 
