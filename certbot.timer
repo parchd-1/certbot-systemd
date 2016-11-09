@@ -1,0 +1,9 @@
+[Unit]
+Description=weekly check for letsencrypt renewals
+
+[Timer]
+OnCalendar=weekly
+Persistent=True
+ 
+[Install]
+WantedBy=timers.target
