@@ -4,6 +4,7 @@ Description=weekly check for letsencrypt renewals
 [Timer]
 OnCalendar=weekly
 Persistent=True
- 
+RandomizedDelaySec=1h
+
 [Install]
 WantedBy=timers.target
